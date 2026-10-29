@@ -1,32 +1,26 @@
-export const siteName = 'Do Skills';
+export const siteName = 'Recall';
 
+/** Placeholder until the Recall brief lands. */
 export const siteDescription =
-  'A curated set of skills for coding agents: a loop from idea to pull request, plus stack skills you add per project. Install the global set once with npx skills.';
+  'Persistent memory for coding agents. Recall captures each session, distills what matters into one local SQLite file, and injects it when the next session starts.';
 
-export const installCommand =
-  'npx skills add https://github.com/edheltzel/Do-Skills/tree/master/skills/global -g';
+/** Landing install command (captain lock). */
+export const installCommand = 'gap sync';
 
-/** Per-project install. Replace <group> with a group name. */
-export const projectCommand =
-  'npx skills add https://github.com/edheltzel/Do-Skills/tree/master/skills/project/<group>';
+/** Product repo. */
+export const repoHref = 'https://github.com/edheltzel/Recall';
 
-/**
- * Skill counts shown in the hero ledger and the scope cards. One source so the
- * two never drift; update here when Do-Skills adds or removes a skill.
- */
-export const counts = { skills: 67, global: 38, project: 29, groups: 13 };
-
-/** Placeholder until the real docs and install guide exist. Keep the links visible. */
+/** Docs and install guide are coming-soon placeholders. Keep the links visible. */
 export const docsHref = '/docs/';
+export const installHref = '/docs/install/';
 
 /**
- * Social preview image. The landing page (Base.astro) and every docs page
- * (astro.config head) resolve `path` against the one `site` origin, so the two
- * always point at the same absolute URL. The file is public/og.png (1200x630).
+ * Social preview image. TODO: recolor public/og.png to the Recall accent once the
+ * brief lands. Until then this is the DoSkills image as a stand-in.
  */
 export const ogImage = {
   path: '/og.png',
   width: 1200,
   height: 630,
-  alt: 'Do Skills. A curated set of skills for coding agents: a loop from idea to pull request, plus stack skills you add per project. Install the global set once with npx skills.',
+  alt: 'Recall. Persistent memory for coding agents.',
 };
