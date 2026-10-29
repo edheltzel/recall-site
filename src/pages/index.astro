@@ -12,8 +12,8 @@ const steps = [
   { name: 'Inject at session start', text: 'Your identity and top-ranked records load when the next session starts.' },
 ];
 const starts = [
-  { title: 'Install guide', text: 'Coming soon.', href: installHref },
-  { title: 'Docs', text: 'Coming soon.', href: docsHref },
+  { title: 'Install guide', text: 'Source checkout, verify, and seed your identity.', href: installHref },
+  { title: 'Docs', text: 'Core loop, CLI, MCP tools, and supported hosts.', href: docsHref },
 ];
 const pad = (n: number) => String(n).padStart(2, '0');
 ---
@@ -41,7 +41,7 @@ const pad = (n: number) => String(n).padStart(2, '0');
             <div class="crow"><span class="lab"><b>1</b> Install</span><Cmd command={installCommand} /></div>
           </div>
           <p class="hint">Work in progress. Copy is a placeholder until the Recall brief lands.</p>
-          <div class="cta"><a class="btn" href={installHref}>Install guide (coming soon)</a><a class="ghost" href={repoHref}>GitHub</a></div>
+          <div class="cta"><a class="btn" href={installHref}>Install guide</a><a class="ghost" href={repoHref}>GitHub</a></div>
         </div>
         <i class="spark" id="sp1" aria-hidden="true"></i><i class="spark v" id="sp2" aria-hidden="true"></i>
       </div>
