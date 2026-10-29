@@ -1,8 +1,8 @@
 # Recall site
 
-Landing and docs site for [Recall](https://github.com/edheltzel/Recall), planned at https://recall.edheltzel.codes. Built from the doskills-site pattern at `a5fcaf5`.
+Landing and docs site for [Recall](https://github.com/edheltzel/Recall), live at https://recall.edheltzel.codes. Built from the doskills-site pattern at `a5fcaf5`.
 
-**noindex stays on everywhere** (robots meta on the landing and docs pages, plus `public/robots.txt`) until a separate captain go-live yes.
+The site is live and indexable: no robots noindex meta, and `public/robots.txt` allows all crawlers.
 
 TODO before go-live: Recall accent color, final copy, recolor `public/og.png`, write the docs and install guide.
 
