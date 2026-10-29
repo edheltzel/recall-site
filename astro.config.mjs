@@ -40,6 +40,9 @@ export default defineConfig({
           items: [
             { label: 'Overview', slug: 'docs' },
             { label: 'Install guide', slug: 'docs/install' },
+            { label: 'Core loop', slug: 'docs/core-loop' },
+            { label: 'Usage: CLI and MCP', slug: 'docs/usage' },
+            { label: 'Supported hosts', slug: 'docs/hosts' },
           ],
         },
       ],
