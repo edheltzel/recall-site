@@ -3,12 +3,12 @@
     var d = document.documentElement;
     var p = null;
     try {
-      p = localStorage.getItem('doskills-theme');
+      p = localStorage.getItem('recall-theme');
     } catch (e) {}
     if (p !== 'light' && p !== 'dark') p = null;
     d.dataset.pref = p || 'auto';
     d.dataset.theme = p || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
     d.style.colorScheme = d.dataset.theme;
-    window.__doskillsThemeAt = performance.now();
+    window.__recallThemeAt = performance.now();
   })();
 </script>

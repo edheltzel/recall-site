@@ -1,8 +1,10 @@
-# Do Skills
+# Recall site
 
-Docs and learning site for [Do-Skills](https://github.com/edheltzel/Do-Skills), live at https://doskills.edheltzel.codes.
+Landing and docs site for [Recall](https://github.com/edheltzel/Recall), planned at https://recall.edheltzel.codes. Built from the doskills-site pattern at `a5fcaf5`.
 
-A curated set of skills for coding agents: a loop from idea to pull request, plus stack skills you add per project. Install the global set once with npx skills.
+**noindex stays on everywhere** (robots meta on the landing and docs pages, plus `public/robots.txt`) until a separate captain go-live yes.
+
+TODO before go-live: Recall accent color, final copy, recolor `public/og.png`, write the docs and install guide.
 
 ## Run locally
 
@@ -13,10 +15,6 @@ npm ci
 npm run dev
 ```
 
-`npm run build` writes the static site to `dist/`. `npm run preview` serves that build.
-
-Set `SITE_URL` for a production build. The default is the planned address, `https://doskills.edheltzel.codes`.
-
 ## Checks
 
 ```bash
@@ -26,5 +24,3 @@ npm run contrast
 npm run flash
 npm run install-box
 ```
-
-`contrast` checks the theme tokens. `flash` and `install-box` open the built site in Chrome.

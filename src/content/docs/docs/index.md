@@ -1,6 +1,6 @@
 ---
 title: Overview
-description: This page is a placeholder. The overview has not been written yet.
+description: Recall docs are coming soon.
 ---
 
-This page is a placeholder. The overview has not been written yet.
+Coming soon. The Recall docs have not been written yet.

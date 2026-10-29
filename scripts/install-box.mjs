@@ -81,9 +81,9 @@ const boxes = await page.evaluate(() =>
 );
 const docWidth = await page.evaluate(() => document.documentElement.scrollWidth);
 
-if (boxes.length < 2) {
+if (boxes.length < 1) {
   failed = true;
-  lines.push(`FAIL expected the two hero install boxes, found ${boxes.length}`);
+  lines.push(`FAIL expected the hero install box, found ${boxes.length}`);
 }
 boxes.forEach((box, i) => {
   if (box.missing) {

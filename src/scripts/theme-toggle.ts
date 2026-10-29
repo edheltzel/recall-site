@@ -1,7 +1,7 @@
 export {};
 
 const root = document.documentElement;
-const storageKey = 'doskills-theme';
+const storageKey = 'recall-theme';
 
 function aria(pref: string) {
   const follows = pref === 'auto' ? ' (follows system)' : '';

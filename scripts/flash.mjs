@@ -87,8 +87,8 @@ for (const pagePath of pages) {
     await client.send('Emulation.setCPUThrottlingRate', { rate: 4 });
     await page.addInitScript((saved) => {
       try {
-        if (saved) localStorage.setItem('doskills-theme', saved);
-        else localStorage.removeItem('doskills-theme');
+        if (saved) localStorage.setItem('recall-theme', saved);
+        else localStorage.removeItem('recall-theme');
       } catch (e) {}
       window.__frames = [];
       const sample = () => {
@@ -108,7 +108,7 @@ for (const pagePath of pages) {
       const paint = performance.getEntriesByType('paint');
       const first = paint.find((entry) => entry.name === 'first-contentful-paint') || paint[0];
       return {
-        themeAt: window.__doskillsThemeAt ?? null,
+        themeAt: window.__recallThemeAt ?? null,
         firstPaint: first ? first.startTime : null,
         theme: document.documentElement.dataset.theme || '',
         frames: window.__frames,
