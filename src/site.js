@@ -1,11 +1,15 @@
 export const siteName = 'Recall';
 
-/** Placeholder until the Recall brief lands. */
+/** From the Recall README TL;DR. */
 export const siteDescription =
-  'Persistent memory for coding agents. Recall captures each session, distills what matters into one local SQLite file, and injects it when the next session starts.';
+  'Recall captures each session, distills it into one local SQLite file, and injects your identity plus top-ranked records when the next session starts, on hosts that support it.';
 
-/** Landing install command (captain lock). */
-export const installCommand = 'gap sync';
+/** Primary landing install: source checkout + installer (Recall's canonical install). */
+export const installCommand =
+  'git clone https://github.com/edheltzel/Recall.git && cd Recall && ./packaging/install.sh';
+
+/** Secondary: GAP-managed machines only (GAP pins recall to main). */
+export const gapInstallCommand = 'gap sync';
 
 /** Product repo. */
 export const repoHref = 'https://github.com/edheltzel/Recall';
