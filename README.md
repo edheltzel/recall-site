@@ -1,26 +1,11 @@
-# Recall site
+# Recall site (archived)
 
-Landing and docs site for [Recall](https://github.com/edheltzel/Recall), live at https://recall.edheltzel.codes. Built from the doskills-site pattern at `a5fcaf5`.
+This repository is archived. The Recall website moved into the product repository on 2026-11-06:
 
-The site is live and indexable: no robots noindex meta, and `public/robots.txt` allows all crawlers.
+- Source: [`site/` in edheltzel/Recall](https://github.com/edheltzel/Recall/tree/main/site), migrated in [edheltzel/Recall#343](https://github.com/edheltzel/Recall/pull/343).
+- Live site: https://recall.edheltzel.codes (landing page) and https://recall.edheltzel.codes/docs/ (docs, built from the Recall repo's `docs/`).
+- Hosting: Cloudflare Pages project `recall`, building `site/` with `npm run build` into `dist`.
 
-TODO before go-live: Recall accent color, final copy, recolor `public/og.png`, write the docs and install guide.
+The history here is kept for reference. Open issues and pull requests against [edheltzel/Recall](https://github.com/edheltzel/Recall) instead.
 
-## Run locally
-
-Needs Node 22.
-
-```bash
-npm ci
-npm run dev
-```
-
-## Checks
-
-```bash
-npx astro check
-npm run build
-npm run contrast
-npm run flash
-npm run install-box
-```
+The old Pages project `recall-site` no longer serves the custom domain; `recall-site-0n5.pages.dev` redirects to https://recall.edheltzel.codes.
